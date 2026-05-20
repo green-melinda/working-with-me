@@ -8,7 +8,7 @@ If you're not familiar with Claude Code: think of `CLAUDE.md` as a brief for an 
 
 ## Why this is public
 
-Two reasons.
+Two reasons — well, 2 reasons beyond I NEED A JOB and its dependency on my being able to explain how well I can tell a machine to do my job. 
 
 First, the practical one: a `CLAUDE.md` that lives only on my machine is useful. One that lives on GitHub travels with me across environments, stays version-controlled, and evolves as my practice does.
 
@@ -42,13 +42,14 @@ I'm still learning what AI-fluent design practice actually looks like. This file
 
 ## Contents
 
-- `CLAUDE.md` — my personal working context for Claude Code
-- More to come as the practice evolves
+- `CLAUDE.md` — personal working context for Claude Code sessions
+- `design-system/design-system.md` — Civic Ink design system: tokens, typography, components, patterns
+- `design-system/CHANGELOG.md` — version history for the design system
 
 ---
 
 ## About me
 
-Senior/Lead UX and Product Designer based in Somerville, MA. A decade of experience designing complex systems for research integrity, loyalty platforms, and civic life. Currently exploring the intersection of AI tooling and design practice.
+Senior/Lead UX and Product Designer based in Somerville, MA. A decade of experience designing complex systems for research integrity, loyalty platforms, healthcare, and civic technology. Currently exploring the intersection of AI tooling and my design practice.
 
 [Portfolio](https://mynameisgreenmelinda.com) · [LinkedIn](https://linkedin.com/in/greenmelinda) · [GitHub](https://github.com/green-melinda)
