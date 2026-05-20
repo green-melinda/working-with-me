@@ -48,14 +48,15 @@ My portfolio: mynameisgreenmelinda.com
 - Civic tech, mission-driven organizations, in-house tech companies
 - Staff / Lead / Senior II UX and product design roles
 - Building a membership database and physical-to-digital experience for a multi-generational social club (active portfolio project)
-- Developing AI-fluent design workflows using Claude Code
+- Building AI-fluent design workflows — active design system, version-controlled, in use across projects
 
 ---
 
 ## Tools I use
 - Figma (primary design tool, 5+ years, design systems, components, prototyping)
 - Notion (project tracking, documentation, research synthesis)
-- Claude Code (agentic workflows, building real things)
+- Claude / Claude Code (agentic workflows, building real things)
+- Personal design system — Civic Ink (tokens, typography, components; lives at `design-system/design-system.md`)
 - Miro (workshops, journey mapping, facilitation)
 - Obsidian (getting started)
 - HTML, CSS, JavaScript, React (working knowledge — enough to collaborate closely with engineers)
