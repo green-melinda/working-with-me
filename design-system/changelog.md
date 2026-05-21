@@ -5,6 +5,13 @@ Format: `## v[version] — [month year]` followed by a brief list.
 
 ---
 
+## v1.3 — May 2026
+- Added `--radius-sm: 4px` and `--radius-pill: 100px` border-radius tokens
+- Updated all rectangular elements from `border-radius: 0` to `--radius-sm`
+- Updated tag component to `inline-flex` with center alignment
+- Updated border rules and anti-patterns to reflect two-value radius system
+- Built component playground (`component-playground.html`)
+
 ## v1.2 — May 2026
 - Added Form Elements section (inputs, textarea, select, checkbox, radio)
 - Added Alarm Red (`#DC2626`) as semantic error color — light and dark variants
