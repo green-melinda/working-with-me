@@ -5,6 +5,11 @@ Format: `## v[version] — [month year]` followed by a brief list.
 
 ---
 
+## v1.4 — May 2026
+
+Updated --text-display-xl from 72px to 64px
+Updated --text-display-lg from 48px to 40px
+
 ## v1.3 — May 2026
 - Added `--radius-sm: 4px` and `--radius-pill: 100px` border-radius tokens
 - Updated all rectangular elements from `border-radius: 0` to `--radius-sm`
