@@ -1,5 +1,5 @@
 # Melinda Green — Personal Design System
-**Version 1.2** · Sharp & Civic · Editorial Brutalism · Light + Dark
+**Version 1.3** · Sharp & Civic · Editorial Brutalism · Light + Dark
 
 > This file is the source of truth for all personal Claude projects. Upload at the start of any session to establish a baseline visual and structural consistency.
 
@@ -243,8 +243,10 @@ Borders are structural, not decorative. They define edges, separate content, and
 
 ### Border Rules
 
-- **No border-radius on structural elements.** Sharp corners are intentional. `border-radius: 0` is the default.
-- **Border-radius allowed only on:** pill tags/badges (`border-radius: 100px`), avatar images, explicitly soft UI moments.
+- **Default border-radius is `4px` (`--radius-sm`)** on all rectangular elements — cards, buttons, inputs, tags. Intentional but not harsh.
+- **Pills only** use `--radius-pill` (`border-radius: 100px`) — status chips, location tags.
+- **Avatars** use `border-radius: 50%`.
+- **Never use values between 4px and 100px.** No 8px, no 12px, no 16px border-radius. The system has two settings: subtle (4px) and pill (100px).
 - **Exposed borders are good.** Showing the grid is a feature, not a bug.
 - **`--border-accent-acid`** — pull quotes, active nav states, primary selected components.
 - **`--border-accent-cobalt`** — informational callouts, active link states, category-filtered views.
@@ -267,7 +269,7 @@ Borders are structural, not decorative. They define edges, separate content, and
   color:          var(--color-paper);
   padding:        var(--space-2) var(--space-4);
   border:         var(--border-mid);
-  border-radius:  0;
+  border-radius:  var(--radius-sm);
   cursor:         pointer;
   transition:     background 100ms ease, color 100ms ease;
 }
@@ -289,7 +291,7 @@ Borders are structural, not decorative. They define edges, separate content, and
   color:          var(--color-ink);
   padding:        var(--space-2) var(--space-4);
   border:         var(--border-mid);
-  border-radius:  0;
+  border-radius:  var(--radius-sm);
   cursor:         pointer;
   transition:     background 100ms ease;
 }
@@ -324,7 +326,7 @@ Borders are structural, not decorative. They define edges, separate content, and
   display:        inline-block;
   padding:        var(--space-1) var(--space-2);
   border:         var(--border-thin);
-  border-radius:  0;
+  border-radius:  var(--radius-sm);
   color:          var(--color-ink);
   background:     transparent;
 }
@@ -351,7 +353,7 @@ Borders are structural, not decorative. They define edges, separate content, and
   background:    var(--color-paper);
   border:        var(--border-mid);
   padding:       var(--space-4);
-  border-radius: 0;
+  border-radius:  var(--radius-sm);
 }
 
 /* Acid accent — primary/featured */
@@ -401,7 +403,7 @@ Borders are structural, not decorative. They define edges, separate content, and
   border-left:   var(--border-accent-cobalt);
   background:    var(--color-warm-rule);
   padding:       var(--space-3) var(--space-4);
-  border-radius: 0;
+  border-radius:  var(--radius-sm);
 }
 
 .callout p {
@@ -547,7 +549,7 @@ Animation is functional or it doesn't exist.
 |---|---|
 | Use Arial | Use Instrument Sans |
 | Use gradients | Use flat color |
-| Use border-radius on structural elements | Keep corners sharp (`border-radius: 0`) |
+| Use border-radius values other than 4px or 100px | Use `--radius-sm` (4px) or `--radius-pill` (100px) only |
 | Use Acid as text color | Use Acid as background or border only |
 | Use Cobalt on Ink background (light mode) | Use Cobalt on Paper or Warm Rule only |
 | Put Acid and Cobalt on the same element | One accent per element, always |
@@ -613,7 +615,7 @@ When starting a new Claude session with this system:
 
 ---
 
-*Version 1.2 · May 2026 · Melinda Green · mynameisgreenmelinda.com*
+*Version 1.3 · May 2026 · Melinda Green · mynameisgreenmelinda.com*
 
 ---
 
@@ -692,7 +694,7 @@ Alarm is a semantic-only color. It lives outside the main palette and has one jo
   color:            var(--color-ink);
   background:       var(--color-paper);
   border:           var(--border-mid);     /* 1px solid ink */
-  border-radius:    0;
+  border-radius:    var(--radius-sm);
   padding:          var(--space-2) var(--space-3);   /* 8px 16px */
   width:            100%;
   box-sizing:       border-box;
@@ -744,7 +746,7 @@ Alarm is a semantic-only color. It lives outside the main palette and has one jo
   color:         var(--color-ink);
   background:    var(--color-paper);
   border:        var(--border-mid);
-  border-radius: 0;
+  border-radius:  var(--radius-sm);
   padding:       var(--space-2) var(--space-3);
   width:         100%;
   box-sizing:    border-box;
@@ -779,7 +781,7 @@ Alarm is a semantic-only color. It lives outside the main palette and has one jo
   color:            var(--color-ink);
   background-color: var(--color-paper);
   border:           var(--border-mid);
-  border-radius:    0;
+  border-radius:    var(--radius-sm);
   padding:          var(--space-2) var(--space-5) var(--space-2) var(--space-3);
   width:            100%;
   box-sizing:       border-box;
@@ -823,7 +825,7 @@ Sharp corners on checkboxes. No rounded softness. The checked state uses Acid �
   height:        16px;
   min-width:     16px;
   border:        var(--border-mid);
-  border-radius: 0;
+  border-radius:  var(--radius-sm);
   background:    var(--color-paper);
   cursor:        pointer;
   margin-top:    2px;
