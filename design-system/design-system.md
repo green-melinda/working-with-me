@@ -1,5 +1,5 @@
 # Melinda Green — Personal Design System
-**Version 1.3** · Sharp & Civic · Editorial Brutalism · Light + Dark
+**Version 1.4** · Sharp & Civic · Editorial Brutalism · Light + Dark
 
 > This file is the source of truth for all personal Claude projects. Upload at the start of any session to establish a baseline visual and structural consistency.
 
@@ -119,8 +119,8 @@ All sizes are multiples of 8 or 4 (half-step). **Never Arial. Never system-ui as
 ```css
 :root {
   /* Display — Playfair Display */
-  --text-display-xl:  72px;   /* Hero, name, one-word statements */
-  --text-display-lg:  48px;   /* Case study titles, section openers */
+  --text-display-xl:  64px;   /* Hero, name, one-word statements */
+  --text-display-lg:  40px;   /* Case study titles, section openers */
   --text-display-md:  32px;   /* Subheadings, pull quotes */
 
   /* Body — Instrument Sans */
@@ -615,7 +615,7 @@ When starting a new Claude session with this system:
 
 ---
 
-*Version 1.3 · May 2026 · Melinda Green · mynameisgreenmelinda.com*
+*Version 1.4 · May 2026 · Melinda Green · mynameisgreenmelinda.com*
 
 ---
 
