@@ -1,0 +1,109 @@
+/*
+ * Civic Ink v1.5 — design tokens
+ * Melinda Green · mynameisgreenmelinda.com
+ *
+ * Canonical machine-readable token file. Values match the CSS blocks in
+ * design-system.md — the doc explains usage and rules, this file carries
+ * the values. Downstream projects snapshot this file instead of
+ * hand-transcribing the doc. Keep the two in sync; changes land here and
+ * in the doc in the same commit, with a changelog entry.
+ */
+
+:root {
+  /* Color — Civic Ink light palette */
+  --color-ink:        #0D0D0D;
+  --color-paper:      #F5F0E8;
+  --color-acid:       #D6E000;
+  --color-cobalt:     #1B4FD8;
+  --color-warm-rule:  #E8E0D0;
+  --color-charcoal:   #2A2A2A;
+  --color-alarm:      #DC2626;
+  --color-alarm-bg:   #FFF5F5;
+
+  /* Type scale — display (Playfair Display) */
+  --text-display-xl:  64px;   /* Hero, name, one-word statements */
+  --text-display-lg:  40px;   /* Case study titles, section openers */
+  --text-display-md:  32px;   /* Subheadings, pull quotes */
+
+  /* Type scale — body (Instrument Sans) */
+  --text-body-xl:     24px;   /* Large intros, lead paragraphs */
+  --text-body-lg:     20px;   /* Section subheadings */
+  --text-body-md:     16px;   /* Default body copy */
+  --text-body-sm:     14px;   /* Captions, labels, metadata */
+  --text-body-xs:     12px;   /* Legal, footnotes, timestamps */
+
+  /* Line height */
+  --leading-tight:    1.1;    /* Display type only */
+  --leading-normal:   1.5;    /* Body copy default */
+  --leading-loose:    1.75;   /* Long-form reading */
+
+  /* Letter spacing */
+  --tracking-tight:  -0.02em; /* Large display text */
+  --tracking-normal:  0;      /* Body */
+  --tracking-wide:    0.08em; /* All-caps labels, tags */
+  --tracking-wider:   0.15em; /* Eyebrow text */
+
+  /* Font stacks */
+  --font-display: 'Playfair Display', 'Georgia', 'Times New Roman', serif;
+  --font-body:    'Instrument Sans', 'Helvetica Neue', 'Helvetica', sans-serif;
+  --font-mono:    'Courier New', 'Courier', monospace;
+
+  /* Spacing — 8pt grid */
+  --space-1:   4px;   /* Half-step: tight internal padding only */
+  --space-2:   8px;   /* Base unit: icon gaps, tight padding */
+  --space-3:  16px;   /* Component padding, small gaps */
+  --space-4:  24px;   /* Card padding, section internal spacing */
+  --space-5:  32px;   /* Between components */
+  --space-6:  48px;   /* Section breathing room */
+  --space-7:  64px;   /* Major section breaks */
+  --space-8:  96px;   /* Page-level vertical rhythm */
+  --space-9: 128px;   /* Hero padding, large whitespace moments */
+
+  /* Layout */
+  --grid-columns:      12;
+  --grid-gutter:       24px;   /* --space-4 */
+  --grid-margin:       32px;   /* --space-5, scales up at breakpoints */
+  --container-max:    1200px;
+  --container-narrow:  720px;  /* Long-form reading, case studies */
+
+  /* Breakpoints (reference only — custom properties can't drive
+     media queries; keep hard-coded query values in sync with these) */
+  --bp-sm:  480px;   /* Large mobile */
+  --bp-md:  768px;   /* Tablet */
+  --bp-lg: 1024px;   /* Desktop */
+  --bp-xl: 1280px;   /* Wide desktop */
+
+  /* Borders & rules */
+  --border-thin:        0.5px solid var(--color-ink);
+  --border-mid:           1px solid var(--color-ink);
+  --border-heavy:         2px solid var(--color-ink);
+  --border-rule:          1px solid var(--color-warm-rule);
+  --border-accent-acid:   4px solid var(--color-acid);
+  --border-accent-cobalt: 4px solid var(--color-cobalt);
+
+  /* Border radius — two settings only: subtle or pill */
+  --radius-sm:   4px;
+  --radius-pill: 100px;
+
+  /* Motion */
+  --duration-fast:  100ms;
+  --duration-mid:   200ms;
+  --duration-slow:  350ms;
+  --ease-sharp:     cubic-bezier(0.4, 0, 0.2, 1);
+  --ease-out:       cubic-bezier(0, 0, 0.2, 1);
+}
+
+/* Dark mode — Civic Ink: Night. Not an inversion; the same system
+   working late. */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-ink:        #F0EBE0;
+    --color-paper:      #111008;
+    --color-acid:       #D6E000;
+    --color-cobalt:     #4B7FFF;
+    --color-warm-rule:  #2A2620;
+    --color-charcoal:   #8A8478;
+    --color-alarm:      #F87171;
+    --color-alarm-bg:   #1C0A0A;
+  }
+}
