@@ -5,6 +5,11 @@ Format: `## v[version] — [month year]` followed by a brief list.
 
 ---
 
+## v1.5 — July 2026
+- Added `tokens.css` — canonical machine-readable token file (light + dark). Downstream projects snapshot it instead of hand-transcribing the doc; keep it and the doc in sync
+- Restored `--radius-sm: 4px` and `--radius-pill: 100px` declarations to the border tokens block (added in v1.3, dropped from the doc's CSS in a later revision while still referenced throughout)
+- First consumer: the Field Notes site (github.com/green-melinda/ai-practice-site)
+
 ## v1.4 — May 2026
 
 Updated --text-display-xl from 72px to 64px

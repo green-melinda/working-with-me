@@ -1,5 +1,5 @@
 # Melinda Green — Personal Design System
-**Version 1.4** · Sharp & Civic · Editorial Brutalism · Light + Dark
+**Version 1.5** · Sharp & Civic · Editorial Brutalism · Light + Dark
 
 > This file is the source of truth for all personal Claude projects. Upload at the start of any session to establish a baseline visual and structural consistency.
 
@@ -238,6 +238,9 @@ Borders are structural, not decorative. They define edges, separate content, and
   --border-rule:          1px solid var(--color-warm-rule);
   --border-accent-acid:   4px solid var(--color-acid);
   --border-accent-cobalt: 4px solid var(--color-cobalt);
+
+  --radius-sm:   4px;    /* All rectangular elements */
+  --radius-pill: 100px;  /* Pills only: status chips, location tags */
 }
 ```
 
@@ -615,7 +618,7 @@ When starting a new Claude session with this system:
 
 ---
 
-*Version 1.4 · May 2026 · Melinda Green · mynameisgreenmelinda.com*
+*Version 1.5 · July 2026 · Melinda Green · mynameisgreenmelinda.com*
 
 ---
 
