@@ -5,6 +5,12 @@ Format: `## v[version] — [month year]` followed by a brief list.
 
 ---
 
+## v1.6 — July 2026
+- Added `civic-ink-type-rule-v1.6.md` — typographic roles addendum. Instrument Sans is structure (chrome), Playfair Display is voice (only where Melinda is saying something), a toy's display face stays inside the toy's own surfaces
+- Headers sit on multiples of 8 (16 / 24 / 32, 40 in reserve); body and small labels align to the 8pt grid via line-height, not font size
+- No token changes; `tokens.css` is unchanged from v1.5
+- Decided 2026-07-16 while designing the Field Notes homepage
+
 ## v1.5 — July 2026
 - Added `tokens.css` — canonical machine-readable token file (light + dark). Downstream projects snapshot it instead of hand-transcribing the doc; keep it and the doc in sync
 - Restored `--radius-sm: 4px` and `--radius-pill: 100px` declarations to the border tokens block (added in v1.3, dropped from the doc's CSS in a later revision while still referenced throughout)
