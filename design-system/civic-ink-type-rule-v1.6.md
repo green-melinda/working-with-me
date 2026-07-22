@@ -4,9 +4,9 @@ Decided 2026-07-16 while designing the Field Notes homepage.
 
 ## The rule
 
-- **Instrument Sans is structure.** Mastheads, nav, section eyebrows, labels, dates, deks, buttons, footers — anything that would still exist if the content changed.
+- **Schibsted Grotesk is structure.** Mastheads, nav, section eyebrows, labels, dates, deks, buttons, footers — anything that would still exist if the content changed.
 - **Playfair Display is voice.** It appears only where I am saying something: theses, entry titles, pull quotes, prose emphasis. Serif is a scarcity signal; every appearance carries editorial weight because it is rationed.
-- **A toy's display face (e.g., Syne for find-a-film) is that toy's voice**, and stays inside the toy's own surfaces. Toy chrome remains Instrument Sans.
+- **A toy's display face (e.g., Syne for find-a-film) is that toy's voice**, and stays inside the toy's own surfaces. Toy chrome remains Schibsted Grotesk.
 
 The test for any new element: *is this chrome, or is this me talking?* The answer sets the typeface. No further debate required.
 

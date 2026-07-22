@@ -25,7 +25,7 @@
   --text-display-lg:  40px;   /* Case study titles, section openers */
   --text-display-md:  32px;   /* Subheadings, pull quotes */
 
-  /* Type scale — body (Instrument Sans) */
+  /* Type scale — body (Schibsted Grotesk) */
   --text-body-xl:     24px;   /* Large intros, lead paragraphs */
   --text-body-lg:     20px;   /* Section subheadings */
   --text-body-md:     16px;   /* Default body copy */
@@ -45,7 +45,7 @@
 
   /* Font stacks */
   --font-display: 'Playfair Display', 'Georgia', 'Times New Roman', serif;
-  --font-body:    'Instrument Sans', 'Helvetica Neue', 'Helvetica', sans-serif;
+  --font-body:    'Schibsted Grotesk', 'Helvetica Neue', 'Helvetica', sans-serif;
   --font-mono:    'Courier New', 'Courier', monospace;
 
   /* Spacing — 8pt grid */

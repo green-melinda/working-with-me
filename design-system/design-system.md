@@ -1,5 +1,5 @@
 # Melinda Green — Personal Design System
-**Version 1.5** · Sharp & Civic · Editorial Brutalism · Light + Dark
+**Version 1.7** · Sharp & Civic · Editorial Brutalism · Light + Dark
 
 > This file is the source of truth for all personal Claude projects. Upload at the start of any session to establish a baseline visual and structural consistency.
 
@@ -103,13 +103,13 @@ Dark mode is not an inversion. It is a different mood — the same system workin
 
 | Role | Typeface | Weight(s) | When to Use |
 |---|---|---|---|
-| **Body (dominant)** | Instrument Sans | 400, 500, 600 | All UI text, body copy, labels, navigation, captions |
+| **Body (dominant)** | Schibsted Grotesk | 400, 500, 600 | All UI text, body copy, labels, navigation, captions |
 | **Display (impact)** | Playfair Display | 700, 900 | Case study titles, section headers, pull quotes, hero text |
 
 ### Google Fonts Import
 
 ```css
-@import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&family=Playfair+Display:wght@700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;600&family=Playfair+Display:wght@700;900&display=swap');
 ```
 
 ### Type Scale (8pt base)
@@ -123,7 +123,7 @@ All sizes are multiples of 8 or 4 (half-step). **Never Arial. Never system-ui as
   --text-display-lg:  40px;   /* Case study titles, section openers */
   --text-display-md:  32px;   /* Subheadings, pull quotes */
 
-  /* Body — Instrument Sans */
+  /* Body — Schibsted Grotesk */
   --text-body-xl:     24px;   /* Large intros, lead paragraphs */
   --text-body-lg:     20px;   /* Section subheadings */
   --text-body-md:     16px;   /* Default body copy */
@@ -148,7 +148,7 @@ All sizes are multiples of 8 or 4 (half-step). **Never Arial. Never system-ui as
 ```css
 :root {
   --font-display: 'Playfair Display', 'Georgia', 'Times New Roman', serif;
-  --font-body:    'Instrument Sans', 'Helvetica Neue', 'Helvetica', sans-serif;
+  --font-body:    'Schibsted Grotesk', 'Helvetica Neue', 'Helvetica', sans-serif;
   --font-mono:    'Courier New', 'Courier', monospace;
 }
 ```
@@ -157,7 +157,7 @@ All sizes are multiples of 8 or 4 (half-step). **Never Arial. Never system-ui as
 
 - **Never use Arial.** At any size. For any reason. Non-negotiable.
 - **Playfair Display is for impact moments only.** If you're reaching for it on a label or caption, stop.
-- **Eyebrow labels** are always: Instrument Sans, 11–12px, 600 weight, all-caps, `--tracking-wider`, `--color-charcoal`.
+- **Eyebrow labels** are always: Schibsted Grotesk, 11–12px, 600 weight, all-caps, `--tracking-wider`, `--color-charcoal`.
 - **Pull quotes** use Playfair Display 700, `--text-display-md`, 4px left border in `--color-acid`.
 - **Links** are always `--color-cobalt`, underlined on hover, never decorated at rest.
 - **No centered body text** longer than two lines. Centered display text is fine.
@@ -550,7 +550,7 @@ Animation is functional or it doesn't exist.
 
 | ❌ Don't | ✓ Instead |
 |---|---|
-| Use Arial | Use Instrument Sans |
+| Use Arial | Use Schibsted Grotesk |
 | Use gradients | Use flat color |
 | Use border-radius values other than 4px or 100px | Use `--radius-sm` (4px) or `--radius-pill` (100px) only |
 | Use Acid as text color | Use Acid as background or border only |
@@ -594,7 +594,7 @@ DARK MODE
   Error:        #F87171  (Alarm)    → lightened for dark surface legibility
 
 FONTS
-  Body:    Instrument Sans 400/500/600
+  Body:    Schibsted Grotesk 400/500/600
   Display: Playfair Display 700/900
   Mono:    Courier New
 
@@ -638,7 +638,7 @@ Alarm is a semantic-only color. It lives outside the main palette and has one jo
 ### Required vs. Optional Convention
 
 - **All fields are required by default.** No marker needed.
-- **Optional fields** get a quiet `(optional)` in parentheses after the label — Instrument Sans, 400 weight, same size as label, no uppercase, no special color.
+- **Optional fields** get a quiet `(optional)` in parentheses after the label — Schibsted Grotesk, 400 weight, same size as label, no uppercase, no special color.
 - **Never use asterisks.** Not even with a legend. Label the exception, not the rule.
 
 ```html
