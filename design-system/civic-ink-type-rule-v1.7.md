@@ -1,6 +1,6 @@
-# Civic Ink v1.6 — Typographic roles (addendum)
+# Civic Ink v1.7 — Typographic roles (addendum)
 
-Decided 2026-07-16 while designing the Field Notes homepage.
+Decided 2026-07-16 while designing the Field Notes homepage. Structure typeface updated to Schibsted Grotesk in v1.7 (2026-07-22); the rule itself is unchanged.
 
 ## The rule
 

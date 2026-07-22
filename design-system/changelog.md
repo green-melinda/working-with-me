@@ -6,7 +6,8 @@ Format: `## v[version] — [month year]` followed by a brief list.
 ---
 
 ## v1.7 — July 2026
-- Body typeface changed from Instrument Sans to **Schibsted Grotesk** in all instances — `design-system.md`, `tokens.css` (`--font-body`), and the `civic-ink-type-rule-v1.6.md` structure/chrome role
+- Body typeface changed from Instrument Sans to **Schibsted Grotesk** in all instances — `design-system.md`, `tokens.css` (`--font-body`), and the type-rule addendum's structure/chrome role
+- Renamed `civic-ink-type-rule-v1.6.md` → `civic-ink-type-rule-v1.7.md` and updated its title to match the current version (rule content unchanged)
 - Updated the Google Fonts import to `family=Schibsted+Grotesk:wght@400;500;600`; weights (400/500/600) and every type/spacing token are unchanged
 - Bumped the `design-system.md` header to v1.7 (it had lagged at v1.5 through the v1.6 addendum)
 
