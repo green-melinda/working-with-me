@@ -45,7 +45,24 @@ I'm still learning what AI-fluent design practice actually looks like. This file
 - `CLAUDE.md` — personal working context for Claude Code sessions
 - `design-system/design-system.md` — Civic Ink design system: tokens, typography, components, patterns
 - `design-system/CHANGELOG.md` — version history for the design system
-- 'UNSLOP-SKILL.md' - originally cloned from Pstack repo to improve writing & overall output quality; includes my own edits and protocols
+- `.claude/skills/unslop/SKILL.md` - the unslop skill, originally cloned from the Pstack repo to improve writing and overall output quality, with my own edits and protocols. It lives at this path because that is where Claude Code looks for skills. A file at the repo root never loads.
+- `install.sh` - links the skills in this repo into `~/.claude/skills` so every session on my machine picks them up, and copies them into project repos on request
+
+---
+
+## Installing the skills
+
+```
+git clone https://github.com/green-melinda/working-with-me.git
+cd working-with-me
+./install.sh
+```
+
+That links every skill in `.claude/skills` into `~/.claude/skills`, and links `claude.md` to `~/.claude/CLAUDE.md` so my working context loads in every session instead of only when I am working inside this repo. Any existing file at either path gets moved to a timestamped backup first. A `git pull` here then updates both everywhere. Pass project paths to copy the skills into those repos as well, which is what makes them work in cloud sessions that clone a repo fresh:
+
+```
+./install.sh ~/code/find-a-film ~/code/ai-practice-site
+```
 
 ---
 

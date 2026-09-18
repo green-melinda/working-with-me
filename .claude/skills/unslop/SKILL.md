@@ -1,6 +1,6 @@
 ---
 name: unslop
-description: Cut AI tells from any writing. Must always apply.
+description: Remove AI tells from any text before it ships. Apply to every piece of writing produced in a session, including docs, readmes, UI copy and microcopy, commit messages, PR descriptions, code comments, and replies in chat. Catches em dash overuse, significance inflation, negative parallelism, rule of three, filler, hedging, passive voice, promotional language, and abstract jargon. Use it without being asked.
 ---
 
 # Unslop

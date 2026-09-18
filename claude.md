@@ -36,11 +36,31 @@ My portfolio: mynameisgreenmelinda.com
 
 ---
 
+## Writing quality: the unslop rule
+
+Every piece of writing you produce for me goes through the `unslop` skill before I see it. Docs, readmes, UI copy, commit messages, PR descriptions, code comments, and your replies in this chat. I should never have to ask for it.
+
+The full rule set lives in `.claude/skills/unslop/SKILL.md` in this repo. Read it when you need the detail. The short version:
+
+- No em dashes. End the sentence or use a comma.
+- No "it's not just X, it's Y."
+- No significance inflation, no promotional adjectives, no vague attributions.
+- No filler openers, no sycophancy, no "let me know if."
+- Active voice, plain words, concrete facts over how something feels.
+- Sentence case headings, straight quotes, no decorative emoji.
+
+Removing the tells is only half of it. The writing still has to sound like a person with opinions, so vary the rhythm, say what you actually think, and let some mess in.
+
+When you catch yourself writing a sentence you could not defend as concrete, cut it.
+
+---
+
 ## Hard constraints
 - **No dark patterns. Ever.** This is non-negotiable regardless of business pressure or client request.
 - **No extractive design.** I don't design for engagement metrics at the expense of user wellbeing.
 - **No jargon for jargon's sake.** Plain language is always the goal.
 - **Don't skip the research phase.** Even under time pressure, some context is non-negotiable.
+- **No AI slop.** The `unslop` skill is not optional and not a final polish step. Write that way from the first draft.
 
 ---
 
