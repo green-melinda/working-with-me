@@ -68,6 +68,15 @@ cd .claude/skills && zip -r ../../unslop.skill unslop -x '.*'
 An account skill syncs into every session on every surface: claude.ai chat, the desktop app, and
 Claude Code in any repo, including repos that do not exist yet. No project needs its own copy.
 
+**Checking they match.** The account copy syncs down to `~/.claude/skills/synced/`, so this says
+whether the running copy is the one in git. Silence means they match:
+
+```
+diff ~/.claude/skills/synced/*/unslop/SKILL.md .claude/skills/unslop/SKILL.md
+```
+
+Output means I edited here and forgot to re-upload.
+
 **One time, on a new machine:**
 
 ```
