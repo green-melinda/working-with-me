@@ -52,6 +52,21 @@ I'm still learning what AI-fluent design practice actually looks like. This file
 
 ## Installing the skills
 
+There are two routes and they cover different things.
+
+**Account upload, which reaches everything.** Upload `unslop.skill` at claude.ai under Settings,
+Capabilities, Skills. An account skill syncs down into every session on every surface: claude.ai
+chat, the desktop app, Claude Code on this machine, and Claude Code on the web in any repo,
+including repos that do not exist yet. Rebuild the upload bundle after editing the skill with:
+
+```
+zip -r unslop.skill unslop -x '.*' && mv unslop.skill ../..
+```
+
+run from `.claude/skills`. One upload replaces all of the per-repo wiring below.
+
+**Local install, which is the backup and adds the CLAUDE.md link.**
+
 ```
 git clone https://github.com/green-melinda/working-with-me.git
 cd working-with-me
