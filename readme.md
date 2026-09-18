@@ -84,7 +84,7 @@ git clone https://github.com/green-melinda/working-with-me.git
 cd working-with-me && ./install.sh
 ```
 
-That links `claude.md` to `~/.claude/CLAUDE.md`, so my working context loads in every Claude Code
+That links `CLAUDE.md` to `~/.claude/CLAUDE.md`, so my working context loads in every Claude Code
 session instead of only when I happen to be inside this folder. It also links the skills into
 `~/.claude/skills` as a fallback. Anything already at those paths gets moved to a timestamped
 backup first. Both are symlinks, so `git pull` updates them with no further step.

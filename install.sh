@@ -37,15 +37,15 @@ done
 # The personal CLAUDE.md only loads when Claude Code runs inside a directory that
 # holds it. Linking it to ~/.claude/CLAUDE.md makes it load in every session on
 # this machine, which is what keeps the unslop rule always on.
-if [ -f "$REPO/claude.md" ]; then
+if [ -f "$REPO/CLAUDE.md" ]; then
   GLOBAL_MD="$HOME/.claude/CLAUDE.md"
   if [ -e "$GLOBAL_MD" ] && [ ! -L "$GLOBAL_MD" ]; then
     backup="$GLOBAL_MD.backup.$(date +%Y%m%d%H%M%S)"
     mv "$GLOBAL_MD" "$backup"
     echo "moved existing global CLAUDE.md to $backup"
   fi
-  ln -sfn "$REPO/claude.md" "$GLOBAL_MD"
-  echo "linked claude.md to $GLOBAL_MD"
+  ln -sfn "$REPO/CLAUDE.md" "$GLOBAL_MD"
+  echo "linked CLAUDE.md to $GLOBAL_MD"
 fi
 
 echo
