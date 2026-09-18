@@ -45,6 +45,7 @@ I'm still learning what AI-fluent design practice actually looks like. This file
 - `CLAUDE.md` — personal working context for Claude Code sessions
 - `design-system/design-system.md` — Civic Ink design system: tokens, typography, components, patterns
 - `design-system/CHANGELOG.md` — version history for the design system
+- 'UNSLOP-SKILL.md' - originally cloned from Pstack repo to improve writing & overall output quality; includes my own edits and protocols
 
 ---
 
