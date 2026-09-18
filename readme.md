@@ -46,6 +46,7 @@ I'm still learning what AI-fluent design practice actually looks like. This file
 - `design-system/design-system.md` — Civic Ink design system: tokens, typography, components, patterns
 - `design-system/CHANGELOG.md` — version history for the design system
 - `.claude/skills/unslop/SKILL.md` - the unslop skill, originally cloned from the Pstack repo to improve writing and overall output quality, with my own edits and protocols. It lives at this path because that is where Claude Code looks for skills. A file at the repo root never loads.
+- `PROJECT-PREAMBLE.md` - the short working-context block to paste into any new project's `CLAUDE.md`, so my context reaches web sessions where `~/.claude` does not exist
 - `install.sh` - links `claude.md` and the skills into `~/.claude` so they load in every Claude Code session on the machine, not just inside this folder
 
 ---
