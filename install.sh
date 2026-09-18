@@ -1,13 +1,11 @@
 #!/usr/bin/env bash
-# Install the skills in this repo so Claude Code loads them everywhere.
+# Link this repo into ~/.claude so Claude Code loads it in every session.
 #
-#   ./install.sh                      link skills into ~/.claude/skills
-#   ./install.sh ~/code/some-project  also copy them into that repo's .claude/skills
+#   ./install.sh
 #
-# The link means a "git pull" in this repo updates the skill in every session
-# on this machine. Project copies are real files because a cloud session clones
-# the repo fresh and cannot follow a link that points outside it. Re-run this
-# script with the project paths whenever the skill changes.
+# Everything here is a symlink, so a "git pull" updates it with no other step.
+# Projects need nothing. Skills uploaded to the Claude account already sync into
+# every session, so there is no per-repo copy to keep in sync.
 
 set -euo pipefail
 
@@ -50,19 +48,5 @@ if [ -f "$REPO/claude.md" ]; then
   echo "linked claude.md to $GLOBAL_MD"
 fi
 
-for project in "$@"; do
-  if [ ! -d "$project" ]; then
-    echo "skipped $project, not a directory" >&2
-    continue
-  fi
-  mkdir -p "$project/.claude/skills"
-  for skill in "$SRC"/*/; do
-    name="$(basename "$skill")"
-    rm -rf "${project:?}/.claude/skills/$name"
-    cp -R "$skill" "$project/.claude/skills/$name"
-    echo "copied $name into $project/.claude/skills"
-  done
-done
-
 echo
-echo "Done. Restart Claude Code, then run /skills to confirm unslop is listed."
+echo "Done. Restart Claude Code to pick up the changes."

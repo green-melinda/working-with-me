@@ -1,0 +1,3 @@
+# build artifact, rebuilt from .claude/skills before each upload
+unslop.skill
+.DS_Store

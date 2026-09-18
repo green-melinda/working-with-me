@@ -46,38 +46,39 @@ I'm still learning what AI-fluent design practice actually looks like. This file
 - `design-system/design-system.md` — Civic Ink design system: tokens, typography, components, patterns
 - `design-system/CHANGELOG.md` — version history for the design system
 - `.claude/skills/unslop/SKILL.md` - the unslop skill, originally cloned from the Pstack repo to improve writing and overall output quality, with my own edits and protocols. It lives at this path because that is where Claude Code looks for skills. A file at the repo root never loads.
-- `install.sh` - links the skills in this repo into `~/.claude/skills` so every session on my machine picks them up, and copies them into project repos on request
+- `install.sh` - links `claude.md` and the skills into `~/.claude` so they load in every Claude Code session on the machine, not just inside this folder
 
 ---
 
-## Installing the skills
+## How this gets installed
 
-There are two routes and they cover different things.
+This repo is the editable record. The copy that actually runs lives on my Claude account, and
+nothing links the two automatically, so an edit here takes two steps.
 
-**Account upload, which reaches everything.** Upload `unslop.skill` at claude.ai under Settings,
-Capabilities, Skills. An account skill syncs down into every session on every surface: claude.ai
-chat, the desktop app, Claude Code on this machine, and Claude Code on the web in any repo,
-including repos that do not exist yet. Rebuild the upload bundle after editing the skill with:
+**1. Edit the rules.** `.claude/skills/unslop/SKILL.md` is the source of truth. Git holds the
+history, so I can see what changed and roll back a rule that turned out wrong.
+
+**2. Re-upload.** Rebuild the bundle, then upload it at claude.ai under Settings, Capabilities,
+Skills:
 
 ```
-zip -r unslop.skill unslop -x '.*' && mv unslop.skill ../..
+cd .claude/skills && zip -r ../../unslop.skill unslop -x '.*'
 ```
 
-run from `.claude/skills`. One upload replaces all of the per-repo wiring below.
+An account skill syncs into every session on every surface: claude.ai chat, the desktop app, and
+Claude Code in any repo, including repos that do not exist yet. No project needs its own copy.
 
-**Local install, which is the backup and adds the CLAUDE.md link.**
+**One time, on a new machine:**
 
 ```
 git clone https://github.com/green-melinda/working-with-me.git
-cd working-with-me
-./install.sh
+cd working-with-me && ./install.sh
 ```
 
-That links every skill in `.claude/skills` into `~/.claude/skills`, and links `claude.md` to `~/.claude/CLAUDE.md` so my working context loads in every session instead of only when I am working inside this repo. Any existing file at either path gets moved to a timestamped backup first. A `git pull` here then updates both everywhere. Pass project paths to copy the skills into those repos as well, which is what makes them work in cloud sessions that clone a repo fresh:
-
-```
-./install.sh ~/code/find-a-film ~/code/ai-practice-site
-```
+That links `claude.md` to `~/.claude/CLAUDE.md`, so my working context loads in every Claude Code
+session instead of only when I happen to be inside this folder. It also links the skills into
+`~/.claude/skills` as a fallback. Anything already at those paths gets moved to a timestamped
+backup first. Both are symlinks, so `git pull` updates them with no further step.
 
 ---
 
